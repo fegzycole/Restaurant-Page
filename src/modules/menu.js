@@ -1,13 +1,8 @@
 import restaurantMenu from '../data/menu';
+import sectionContainer from './container';
 
 const menu = () => {
-  const container = document.createElement('div');
-  container.classList.add('menu-container');
-
-  const header = document.createElement('h3');
-  header.innerText = 'Our Menu';
-
-  container.appendChild(header);
+  const container = sectionContainer('menu-container', 'Our Menu', 'menu-container');
 
   const foodsMenu = document.createElement('div');
   foodsMenu.classList.add('foods-menu');

@@ -1,6 +1,7 @@
 const homePage = () => {
   const container = document.createElement('div');
   container.classList.add('home-page');
+  container.id = 'home-page';
 
   const textContainer = document.createElement('div');
   textContainer.classList.add('text-container');
