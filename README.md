@@ -49,7 +49,7 @@ This project was built with Javascript
 
 ## Getting Started
 
-- git clone https://github.com/WCanirinka/Library-app-js.git
+- git clone https://github.com/fegzycole/Restaurant-Page.git
 
 - cd Library-app-js
 
@@ -62,32 +62,26 @@ This project was built with Javascript
 
 ## Live Version
 
-- You can view the app [Here](https://wcanirinka.github.io/Library-app-js/)
+- You can view the app [Here](https://fegzycole.github.io/Restaurant-Page/)
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/WCanirinka/Library-app-js/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/fegzycole/Restaurant-Page/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTACT -->
 ## Contact
-Wilfried Canirinka
-
-* [Github profile](https://github.com/WCanirinka)
-
-* [Twitter](https://twitter.com/WCanirinka )
-
 Ferguson Iyara
 * [Github profile](https://github.com/fegzycole)
 
 * [Twitter](https://twitter.com/fergusoniyara)
 
-Project Link: [Project repo](https://github.com/WCanirinka/Library-app-js)
+Project Link: [Project repo](https://github.com/fegzycole/Restaurant-Page)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/badge/Contributors-2-%2300ff00
-[contributors-url]: https://github.com/WCanirinka/Library-app-js/graphs/contributors
+[contributor-shield]: https://img.shields.io/badge/Contributors-1-%2300ff00
+[contributor-url]: https://github.com/fegzycole/Restaurant-Page/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
-[issues-url]: https://github.com/WCanirinka/Library-app-js/issues/
+[issues-url]: https://github.com/fegzycole/Restaurant-Page/issues/
