@@ -1,15 +1,18 @@
+import navListItem from './navlistitem';
+
 const navList = () => {
   const container = document.createElement('ul');
   container.classList.add('unordered-list');
 
-  const items = ['Home', 'Menu', 'Contact Us'];
+  const homeBtn = navListItem('Home', 'home');
 
-  items.forEach((item) => {
-    const listItem = document.createElement('li');
-    listItem.classList.add('list-item');
-    listItem.innerText = item;
-    container.appendChild(listItem);
-  });
+  const menuBtn = navListItem('Menu', 'menu');
+
+  const contactBtn = navListItem('Contact Us', 'contact');
+
+  container.appendChild(homeBtn);
+  container.appendChild(menuBtn);
+  container.appendChild(contactBtn);
 
   return container;
 };
