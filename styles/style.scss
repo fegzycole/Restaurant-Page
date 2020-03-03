@@ -40,6 +40,7 @@ body {
 }
 
 .home-page {
+  display: none;
   background: url('https://images.unsplash.com/photo-1488992783499-418eb1f62d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=853&q=80') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
@@ -85,6 +86,7 @@ body {
 }
 
 .menu-container {
+  display: none;
   margin-top: 15px;
 
   h3 {
@@ -120,6 +122,40 @@ body {
         font-size: 20px;
         margin: 7px 0;
       }
+    }
+  }
+}
+
+.contact-page {
+  display: none;
+  h3 {
+    text-align: center;
+    font-size: 29px;
+    margin: 15px 0;
+  }
+
+  .form {
+    width: 400px;
+    margin: 30px auto;
+
+    input {
+      width: 100%;
+      margin: 0 auto 10px auto;
+    }
+
+    input[type='text'] {
+      padding: 15px 20px;
+      box-shadow: inset 0 .1em .1em 0 rgba(0,0,0,.05);
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .3rem;
+      box-sizing: border-box;
+    }
+
+    input[type='submit'] {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 7px 30px;
     }
   }
 }
