@@ -1,26 +1,39 @@
-import navbar from './modules/navbar';
+import header from './modules/navbar';
 import homePage from './modules/home';
 import menuPage from './modules/menu';
 import contactPage from './modules/contact';
-import handleSections from './modules/handleSections';
 
 const app = document.querySelector('#content');
 
 const home = homePage();
 const menu = menuPage();
 const contact = contactPage();
+const navbar = header();
 
-app.appendChild(navbar());
-app.appendChild(home);
-app.appendChild(menu);
-app.appendChild(contact);
+const show = (section) => {
+  app.innerHTML = '';
+  app.appendChild(navbar);
+  app.appendChild(section);
+};
 
-handleSections(home, menu, contact);
+show(home);
 
+const ctaBtn = document.querySelector('.cta');
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
 const contactBtn = document.querySelector('#contact');
 
-homeBtn.addEventListener('click', () => handleSections(home, menu, contact));
-menuBtn.addEventListener('click', () => handleSections(menu, home, contact));
-contactBtn.addEventListener('click', () => handleSections(contact, home, menu));
+const displaySection = (e) => {
+  if (e.target === homeBtn) {
+    show(home);
+  } else if (e.target === menuBtn || e.target === ctaBtn) {
+    show(menu);
+  } else {
+    show(contact);
+  }
+};
+
+homeBtn.addEventListener('click', displaySection);
+menuBtn.addEventListener('click', displaySection);
+contactBtn.addEventListener('click', displaySection);
+ctaBtn.addEventListener('click', displaySection);
